@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CXLight", "CXLight\CXLight.csproj", "{CD3ADDC4-5F24-4493-9606-E7CAF29C5F08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CXLightTests", "CXLightTests\CXLightTests.csproj", "{A49A9BC6-B952-4A8A-9B0A-431AD7E51EF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD3ADDC4-5F24-4493-9606-E7CAF29C5F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD3ADDC4-5F24-4493-9606-E7CAF29C5F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD3ADDC4-5F24-4493-9606-E7CAF29C5F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD3ADDC4-5F24-4493-9606-E7CAF29C5F08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A49A9BC6-B952-4A8A-9B0A-431AD7E51EF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A49A9BC6-B952-4A8A-9B0A-431AD7E51EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A49A9BC6-B952-4A8A-9B0A-431AD7E51EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A49A9BC6-B952-4A8A-9B0A-431AD7E51EF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC8C639B-1606-4183-8B62-66BDF17E7893}
+	EndGlobalSection
+EndGlobal

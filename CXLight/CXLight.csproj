@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD3ADDC4-5F24-4493-9606-E7CAF29C5F08}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CXLight</RootNamespace>
+    <AssemblyName>CXLight</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataStructures\LockingQueue\LockingQueue.cs" />
+    <Compile Include="DataStructures\MonitoredList\MonitoredList.cs" />
+    <Compile Include="DataStructures\MultiMap\Exts\MultiMapExt.cs" />
+    <Compile Include="DataStructures\MultiMap\MultiMap.cs" />
+    <Compile Include="DataStructures\Shady\ShadyDouble.cs" />
+    <Compile Include="DataStructures\Shady\ShadyOctuple.cs" />
+    <Compile Include="DataStructures\Shady\ShadyQuad.cs" />
+    <Compile Include="DataStructures\Shady\ShadySingle.cs" />
+    <Compile Include="Exts\ByteArrayExt.cs" />
+    <Compile Include="Exts\DictionaryExt.cs" />
+    <Compile Include="Exts\DoubleExt.cs" />
+    <Compile Include="Exts\EnumerableExt.cs" />
+    <Compile Include="Exts\ListExt.cs" />
+    <Compile Include="Exts\MresExt.cs" />
+    <Compile Include="Exts\StopwatchExt.cs" />
+    <Compile Include="Exts\StreamExt.cs" />
+    <Compile Include="Exts\StringExt.cs" />
+    <Compile Include="Exts\TupleExt.cs" />
+    <Compile Include="Kits\BenchKit.cs" />
+    <Compile Include="Kits\Change.cs" />
+    <Compile Include="Kits\IoKit.cs" />
+    <Compile Include="Kits\RngKit.cs" />
+    <Compile Include="Kits\StringKit.cs" />
+    <Compile Include="Kits\SysInfoKit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Threading\Pool\Exts\WorkerPoolExt.cs" />
+    <Compile Include="Threading\Pool\PoolWorker.cs" />
+    <Compile Include="Threading\Pool\WorkerPool.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
